@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: kyverno
+commonLabels:
+  app.kubernetes.io/name: prometheus
+  app.kubernetes.io/part-of: kyverno
+resources:
+- role.yaml
+- serviceaccount.yaml
+- rolebinding.yaml
+- deployment.yaml
+- service.yaml
+images:
+- name: prom/prometheus
+  newTag: v2.3.2
+configMapGenerator:
+- name: prometheus-configuration
+  files:
+  - prometheus.yaml

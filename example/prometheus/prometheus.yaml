@@ -1,0 +1,10 @@
+
+global:
+  scrape_interval: 10s
+scrape_configs:
+- job_name: 'prometheus'
+  static_configs:
+  - targets: ['localhost:9090']
+- job_name: kyverno
+  static_configs:
+  - targets: ['kyverno-svc-metrics.kyverno.svc.cluster.local:8000']
