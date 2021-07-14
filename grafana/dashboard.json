@@ -782,7 +782,7 @@
         "targets": [
           {
             "exemplar": true,
-            "expr": "count(count(kyverno_policy_rule_results_info{rule_result=\"pass\"}) by (policy_name, policy_type)) by (policy_type)",
+            "expr": "count(count(kyverno_policy_rule_results_info{rule_result=\"fail\"}) by (policy_name, policy_type)) by (policy_type)",
             "interval": "",
             "legendFormat": "{{policy_type}}",
             "refId": "A"
@@ -1683,8 +1683,8 @@
         "yaxes": [
           {
             "$$hashKey": "object:5548",
-            "format": "short",
-            "label": "Milliseconds",
+            "format": "ms",
+            "label": "",
             "logBase": 1,
             "max": null,
             "min": null,
@@ -1791,8 +1791,8 @@
         "yaxes": [
           {
             "$$hashKey": "object:5548",
-            "format": "short",
-            "label": "Milliseconds",
+            "format": "ms",
+            "label": "",
             "logBase": 1,
             "max": null,
             "min": null,
@@ -1829,7 +1829,8 @@
                   "value": null
                 }
               ]
-            }
+            },
+            "unit": "ms"
           },
           "overrides": []
         },
@@ -1884,7 +1885,8 @@
                   "value": null
                 }
               ]
-            }
+            },
+            "unit": "ms"
           },
           "overrides": []
         },
