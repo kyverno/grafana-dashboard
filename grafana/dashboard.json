@@ -44,7 +44,7 @@
       },
       "id": 42,
       "options": {
-        "content": "# Kyverno\nA Kubernetes-native policy management engine\n\n#### About this dashboard\n\nThis dashboard represents generic insights which can be extracted and made well use of from a cluster with Kyverno in action.\n\n#### For more details around the metrics\n\nCheckout the [official docs of Kyverno metrics](https://kyverno.io/docs/monitoring/)",
+        "content": "# Kyverno\nA Kubernetes-native policy management engine\n\n#### About this dashboard\n\nThis dashboard represents generic insights that can be extracted from a cluster with Kyverno running.\n\n#### For more details around the metrics\n\nCheckout the [official docs of Kyverno metrics](https://kyverno.io/docs/monitoring/)",
         "mode": "markdown"
       },
       "pluginVersion": "8.1.0",
