@@ -2389,7 +2389,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "sum(increasease(kyverno_policy_changes_total{}[5m])) by (policy_type)",
+          "expr": "sum(increase(kyverno_policy_changes_total{}[5m])) by (policy_type)",
           "interval": "",
           "legendFormat": "{{policy_type}}",
           "refId": "A"
